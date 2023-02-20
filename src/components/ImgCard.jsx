@@ -6,7 +6,7 @@ const ImgCard = ({ styles, src, num, props }) => {
     <div className="grid grid-cols-2 lg:flex gap-4 lg:gap-6 ">
       <div className={`${props}`}>
         <img
-          className={`max-w-[360px] max-h-[274px] h-[274px] ${styles}`}
+          className={` overflow-hidden           ${styles}`}
           src={src}
           alt=""
         />
