@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.curve {
+    width: fit-content;
+}
+
+.curve::after {
+    width: calc(100% - 70px);
+}
