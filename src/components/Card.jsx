@@ -19,7 +19,7 @@ const Card = ({ styles, title }) => {
           "Study guide",
         ].map((item, i) => {
           return (
-            <div className="text-lg flex justify-between">
+            <div key={i} className="text-lg flex justify-between">
               <p>{item}</p>
               <AiOutlineArrowRight className="text-xl" />
             </div>

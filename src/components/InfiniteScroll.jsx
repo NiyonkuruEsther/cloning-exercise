@@ -25,7 +25,7 @@ const InfiniteScroll = () => {
           },
         ].map((item, i) => {
           return (
-            <div className="max-w-[377px] flex flex-col gap-6">
+            <div key={i} className="max-w-[377px] flex flex-col gap-6">
               <div
                 className={`max-w-[377px] max-h-[476px] bg-cover h-[476px] bg-[url('https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/ee314579-ae99-4e24-a166-e4275b7b26d7/MH_G3A6804_Spinozaprijs_Hero_2200x720_3.png?w=397&h=595&fit=clip&rect=673%2C125%2C397%2C595&fm=jpg&auto=format&dpr=1')]`}
               ></div>

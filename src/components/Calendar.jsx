@@ -25,7 +25,7 @@ const Calendar = () => {
           <div className="grid grid-cols-4 items-center gap-6 py-16">
             {[1, 2, 3, 4].map((item, i) => {
               return (
-                <div>
+                <div key={i}>
                   <h1 className="text-thin underline underline-offset-1">
                     PHD Defences
                   </h1>
