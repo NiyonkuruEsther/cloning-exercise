@@ -68,7 +68,7 @@ export default function Home() {
                   }
                 />
               </div>
-              <div className="gap-24 grid justify-self-end">
+              <div className="gap-24 flex flex-col justify-self-end">
                 {" "}
                 <ImgCard
                   num={13}
@@ -76,7 +76,7 @@ export default function Home() {
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/45e509b2-1cf3-49a7-b40d-53310c2e2219/7%20ton%20voor%20welzijn%20Oekrai%CC%88ne%20vluchtelingen_afb_1250x600.jpg"
                   }
                   styles={
-                    "max-w-[150px] w-[150px]  h-[114px] object-cover object-center "
+                    "max-w-[150px] w-[150px]  max-h-[124px] object-cover object-center "
                   }
                 />
                 <ImgCard
@@ -85,7 +85,7 @@ export default function Home() {
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/c49919f7-968b-41d7-8776-e9e555f737c5/Sapiens_VUweb_2200x720.jpg?w=1250&h=600&fit=clip&rect=350,0,1500,720"
                   }
                   styles={
-                    "max-w-[150px] w-[150px]  h-[114px] object-cover object-center"
+                    "max-w-[150px] w-[150px] max-h-[124px]  object-cover object-center"
                   }
                 />
                 <ImgCard
@@ -94,7 +94,7 @@ export default function Home() {
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/f9f7b751-4e22-4175-add9-3aec344e16ed/Wouter-Botzen.png"
                   }
                   styles={
-                    "max-w-[150px] w-[150px]  h-[114px] object-cover object-center"
+                    "max-w-[150px] w-[150px] max-h-[124px]   object-cover object-center"
                   }
                 />
               </div>
