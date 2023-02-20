@@ -12,6 +12,7 @@ const Card = ({ styles, title }) => {
         }`}
       >
         <h1 className="">{title}</h1>
+        <AiOutlineArrowRight />
       </div>
       <div className="flex flex-col font-normal px-2">
         {[
