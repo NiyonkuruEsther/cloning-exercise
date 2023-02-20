@@ -7,7 +7,6 @@ import Visit from "@/components/Visit";
 import Impact from "@/components/Impact";
 import UkraineCard from "@/components/UkraineCard";
 import ImgCard from "@/components/ImgCard";
-import ImageCards from "@/components/imageCards";
 import { BsArrowRight } from "react-icons/bs";
 import Calendar from "@/components/Calendar";
 import Features from "@/components/Features";
@@ -76,21 +75,21 @@ export default function Home() {
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/45e509b2-1cf3-49a7-b40d-53310c2e2219/7%20ton%20voor%20welzijn%20Oekrai%CC%88ne%20vluchtelingen_afb_1250x600.jpg"
                   }
-                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[110px] "}
+                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[114px] "}
                 />
                 <ImgCard
                   num={15}
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/c49919f7-968b-41d7-8776-e9e555f737c5/Sapiens_VUweb_2200x720.jpg?w=1250&h=600&fit=clip&rect=350,0,1500,720"
                   }
-                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[110px]"}
+                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[114px]"}
                 />
                 <ImgCard
                   num={9}
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/f9f7b751-4e22-4175-add9-3aec344e16ed/Wouter-Botzen.png"
                   }
-                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[110px]"}
+                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[114px]"}
                 />
               </div>
             </div>{" "}
