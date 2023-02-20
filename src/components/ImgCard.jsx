@@ -5,11 +5,7 @@ const ImgCard = ({ styles, src, num, props }) => {
   return (
     <div className="grid grid-cols-2 lg:flex gap-4 lg:gap-6 ">
       <div className={`${props}`}>
-        <img
-          className={` overflow-hidden           ${styles}`}
-          src={src}
-          alt=""
-        />
+        <img className={` overflow-hidden ${styles}`} src={src} alt="" />
       </div>
 
       <div className="flex flex-col text-xl lg:text-2xl h-full justify-between">

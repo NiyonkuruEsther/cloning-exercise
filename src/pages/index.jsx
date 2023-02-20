@@ -60,12 +60,14 @@ export default function Home() {
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/83279044-76f1-4736-8fe6-383f0530dae1/2N3337X.jpg?w=1250&h=600&fit=clip&rect=0,1254,6720,3226"
                   }
+                  styles={"max-w-[360px] max-h-[274px] h-[274px]"}
                 />
                 <ImgCard
                   num={11}
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/d8e771d2-c135-499c-a67c-d1da825f453b/robofinch%20def.png"
                   }
+                  styles={"max-w-[360px] max-h-[274px] h-[274px]"}
                 />
               </div>
               <div className="gap-24 grid justify-self-end">
