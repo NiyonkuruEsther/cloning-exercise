@@ -23,33 +23,33 @@ const Calendar = () => {
           </div>
 
           <div className="grid grid-cols-4 items-center gap-6 py-16">
-            {[1, 2, 3, 4].map((item, i) => {
-              return (
-                <div key={i}>
-                  <h1 className="text-thin underline underline-offset-1">
-                    PHD Defences
-                  </h1>
-                  <div className="mt-4">
-                    {[1].map((item, i) => {
-                      return (
-                        <div>
-                          <h1 className="text-blue">21 February 2023</h1>
-                          {[1].map((item, i) => {
-                            return (
-                              <div>
-                                <h1 className="">
-                                  Pilates - Life is Better in 3D
-                                </h1>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      );
-                    })}
+            {["PHD Defences", "Social events", "Other events", "Lectures"].map(
+              (item, index) => {
+                return (
+                  <div key={index}>
+                    <h1 className="text-thin underline">{item}</h1>
+                    <div className="mt-4">
+                      {[1].map((item, i) => {
+                        return (
+                          <div key={i}>
+                            <h1 className="text-blue">21 February 2023</h1>
+                            {[1].map((item, i) => {
+                              return (
+                                <div key={i}>
+                                  <h1 className="">
+                                    Pilates - Life is Better in 3D
+                                  </h1>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              }
+            )}
           </div>
         </div>
       </div>

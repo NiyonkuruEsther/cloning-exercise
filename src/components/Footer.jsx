@@ -6,10 +6,17 @@ const Footer = () => {
     <div className="py-8 bg-blue">
       <div className=" text-white flex justify-between text-lg 2xl:max-w-[1250px] max-w-[988px]  mx-auto">
         <div className="flex text-white gap-3">
-          {[1, 2, 3, 4, 5, 6].map(() => {
+          {[
+            "Privacy Statement",
+            "Disclaimer",
+            "Safety at VU Amsterdam",
+            "Colofon",
+            "Cookie Settings",
+            "Web archive",
+          ].map((item, i) => {
             return (
-              <div className="flex gap-1 items-center">
-                <p>lorem ipsum </p> <BsArrowRight />
+              <div key={i} className="flex gap-1 items-center">
+                <p>{item} </p> <BsArrowRight />
               </div>
             );
           })}
