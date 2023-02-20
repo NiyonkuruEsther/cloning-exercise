@@ -4,8 +4,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between shadow-md w-full max-w-[1600px] mx-auto">
-      <div className="px-30 py-4 bg-white max-w-[1366px] w-[1366px]">
+    <div className="flex justify-between shadow-md fixed inset-x-0 z-50 w-full max-w-[1600px] mx-auto">
+      <div className="px-30 py-4 bg-white max-w-full w-full">
         <img
           src="https://vu.nl/assets/images/VU-logo-nobg.svg"
           alt=""

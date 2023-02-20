@@ -2,10 +2,10 @@ import React from "react";
 
 import { BsArrowRight } from "react-icons/bs";
 
-const UkraineCard = () => {
+const UkraineCard = ({ text, styles }) => {
   return (
-    <div className="max-w-[615px] p-12 flex flex-col shadow-lg">
-      <p className="text-green text-3xl">Ukraine</p>
+    <div className={`max-w-[615px] px-12 py-8 flex flex-col gap-8 shadow-lg`}>
+      <p className={` text-3xl ${styles}`}>{text}</p>
       <p className="">Information and support</p>
       <BsArrowRight className="self-end" />
     </div>

@@ -8,7 +8,26 @@ const Info = () => {
   return (
     <div className="max-w-full relative z-[999999px] bg-white">
       {" "}
-      <div className="max-w-5xl mx-auto w-full flex text-lg font-semibold gap-28  pt-14 pb-24 ">
+      <div className="lg:hidden max-w-5xl mx-auto w-full flex text-base lg:text-lg font-semibold gap-14 lg:gap-28 px-5 py-6 lg:pt-14 lg:pb-24 ">
+        <div className="flex flex-col lg:flex-row gap-2 items-center ">
+          {" "}
+          <SlGraduation className="text-blue text-2xl lg:text-4xl" />
+          <p>Students</p>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-2 items-center">
+          <BiWorld className="text-blue text-2xl lg:text-4xl" />
+          <p>International Students</p>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-2 items-center">
+          <BsAwardFill className="text-blue text-2xl lg:text-4xl" />
+          <p>PHD Defences</p>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-2 items-center">
+          <BsPuzzleFill className="text-blue text-2xl lg:text-4xl" />
+          <p>Lorem Ipsum</p>
+        </div>
+      </div>
+      <div className="hidden max-w-5xl mx-auto w-full lg:flex text-lg font-semibold gap-28  pt-14 pb-24 ">
         <div className="flex gap-2 items-center ">
           {" "}
           <SlGraduation className="text-blue  text-4xl" />
@@ -27,9 +46,9 @@ const Info = () => {
           <p>Lorem Ipsum</p>
         </div>
       </div>
-      <div className=" flex justify-between max-w-fit gap-12 mx-auto">
+      <div className=" flex justify-between max-w-fit gap-5 lg:gap-12 mx-auto px-5 flex-col lg:flex-row">
         <Card styles={"w-[615px] "} title="Education" />
-        <Card styles={"w-[615px] "} title="Education" />
+        <Card styles={"w-[615px] "} title="Research" />
       </div>
     </div>
   );
