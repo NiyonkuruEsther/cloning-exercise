@@ -23,6 +23,10 @@ module.exports = {
       screens: {
         larg: "2363px",
       },
+      boxShadow: {
+        "3xl": "0 0 120px 0 rgb(0 0 0 / 10%)",
+        cust: "0 0 60px 0 rgb(0 0 0 / 10%)",
+      },
     },
   },
   plugins: [],

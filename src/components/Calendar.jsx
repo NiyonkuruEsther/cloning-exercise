@@ -13,10 +13,10 @@ const Calendar = () => {
               <h1 className="text-blue text-4xl">Calendar</h1>
             </div>
             <div className="flex gap-6">
-              <div className="p-4 shadow-2xl w-72 flex  justify-between">
+              <div className="p-4 shadow-3xl w-72 flex  justify-between">
                 All categories <BiChevronDown />
               </div>
-              <div className="p-4 shadow-2xl w-72 flex justify-between">
+              <div className="p-4 shadow-3xl w-72 flex justify-between">
                 Date <BiChevronDown />
               </div>
             </div>

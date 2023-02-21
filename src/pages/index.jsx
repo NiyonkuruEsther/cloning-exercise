@@ -31,12 +31,12 @@ export default function Home() {
         <link rel="icon" href="/Capture.PNG" />
       </Head>
       <div className="bg-gray text-[#333333]">
-        <div className="bg-white max-w-[1600px] mx-auto shadow-xl overflow-hidden">
+        <div className="bg-white max-w-[1600px] mx-auto shadow-3xl overflow-hidden">
           <Navbar />
           <Hero />
         </div>
         <Image />
-        <div className="bg-white max-w-[1600px] mx-auto shadow-xl overflow-hidden">
+        <div className="bg-white max-w-[1600px] mx-auto shadow-3xl ">
           <Info />
           <Visit />
           <Impact />
@@ -60,14 +60,14 @@ export default function Home() {
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/83279044-76f1-4736-8fe6-383f0530dae1/2N3337X.jpg?w=1250&h=600&fit=clip&rect=0,1254,6720,3226"
                   }
-                  styles={"max-w-[360px] max-h-[274px] h-[274px]"}
+                  styles={"max-w-[360px] max-h-[274px] h-[274px] object-cover"}
                 />
                 <ImgCard
                   num={11}
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/d8e771d2-c135-499c-a67c-d1da825f453b/robofinch%20def.png"
                   }
-                  styles={"max-w-[360px] max-h-[274px] h-[274px]"}
+                  styles={"max-w-[360px] max-h-[274px] h-[274px] object-cover"}
                 />
               </div>
               <div className="gap-24 grid justify-self-end">
@@ -77,21 +77,27 @@ export default function Home() {
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/45e509b2-1cf3-49a7-b40d-53310c2e2219/7%20ton%20voor%20welzijn%20Oekrai%CC%88ne%20vluchtelingen_afb_1250x600.jpg"
                   }
-                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[114px] "}
+                  styles={
+                    "max-w-[150px] w-[150px] max-h-[114px] h-[114px] object-cover"
+                  }
                 />
                 <ImgCard
                   num={15}
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/c49919f7-968b-41d7-8776-e9e555f737c5/Sapiens_VUweb_2200x720.jpg?w=1250&h=600&fit=clip&rect=350,0,1500,720"
                   }
-                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[114px]"}
+                  styles={
+                    "max-w-[150px] w-[150px] max-h-[114px] h-[114px] object-cover"
+                  }
                 />
                 <ImgCard
                   num={9}
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/f9f7b751-4e22-4175-add9-3aec344e16ed/Wouter-Botzen.png"
                   }
-                  styles={"max-w-[150px] w-[150px] max-h-[114px] h-[114px]"}
+                  styles={
+                    "max-w-[150px] w-[150px] max-h-[114px] h-[114px] object-cover"
+                  }
                 />
               </div>
             </div>{" "}

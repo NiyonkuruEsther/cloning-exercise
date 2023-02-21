@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`flex justify-between shadow-md fixed inset-x-0 z-50 w-full max-w-[1600px] mx-auto ${
+        className={`flex justify-between shadow-3xl fixed inset-x-0 z-50 w-full max-w-[1600px] mx-auto ${
           tabValue === 1 ? " invisible" : ""
         }`}
       >
@@ -54,7 +54,7 @@ const Navbar = () => {
         className={
           tabValue
             ? " max-w-[1600px] w-[1600px] absolute mx-auto h-screen transition-all ease-in-out duration-300 opacity-100 z-[100000000] overflow-hidden bg-white"
-            : "transition-all duration-0 absolute opacity-0 w-[1600px] h-0 top-0 overflow-hidden mx-auto"
+            : "transition-all duration-0 absolute opacity-0 w-[1600px] h-0 bottom-0 overflow-hidden mx-auto"
         }
       >
         <div className="max-w-[1600px] mx-auto flex w-full justify-end">

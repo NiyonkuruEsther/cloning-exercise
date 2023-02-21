@@ -25,9 +25,9 @@ const Impact = () => {
           <div className="self-end flex gap-6 items-center">
             <div className="flex gap-4 items-center">
               <div className="w-5 h-5 bg-red rounded-full"></div>
-              <div className="w-3 h-3 bg-red rounded-full"></div>
-              <div className="w-3 h-3 bg-red rounded-full"></div>
-              <div className="w-3 h-3 bg-red rounded-full"></div>
+              <div className="w-2.5 h-2.5 bg-red rounded-full opacity-75"></div>
+              <div className="w-2.5 h-2.5 bg-red rounded-full opacity-75"></div>
+              <div className="w-2.5 h-2.5 bg-red rounded-full opacity-75"></div>
             </div>
 
             <div className="flex text-2xl  bg-red p-4 bg-opacity-30 gap-10">

@@ -6,7 +6,7 @@ import Card from "./Card";
 
 const Info = () => {
   return (
-    <div className="max-w-full relative z-[999999px] bg-white">
+    <div className="max-w-full -mt-16 bg-white">
       {" "}
       <div className="lg:hidden max-w-5xl mx-auto w-full flex text-base lg:text-lg font-semibold gap-14 lg:gap-28 px-5 py-6 lg:pt-14 lg:pb-24 ">
         <div className="flex flex-col lg:flex-row gap-2 items-center ">
@@ -27,8 +27,8 @@ const Info = () => {
           <p>Lorem Ipsum</p>
         </div>
       </div>
-      <div className="hidden max-w-5xl mx-auto w-full lg:flex text-lg font-semibold gap-28  pt-14 pb-24 ">
-        <div className="flex gap-2 items-center ">
+      <div className="hidden max-w-5xl mx-auto w-full lg:flex text-lg font-semibold gap-28  pt-8 pb-24">
+        <div className="flex gap-2 items-center">
           {" "}
           <SlGraduation className="text-blue  text-4xl" />
           <p>Students</p>
