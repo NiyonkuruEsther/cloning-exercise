@@ -1,28 +1,33 @@
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
-import { BsArrowRight, BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import {
+  BsArrowRight,
+  BsChevronDown,
+  BsChevronLeft,
+  BsChevronRight,
+} from "react-icons/bs";
 
 const Calendar = () => {
   return (
     <div>
       {" "}
-      <div className="px-5 text-xl ">
-        <div className="2xl:max-w-[1250px] max-w-[988px]  bg-white mx-auto border-b border-b-blue">
-          <div className="grid grid-cols-2 items-center py-16">
-            <div>
-              <h1 className="text-blue text-4xl">Calendar</h1>
+      <div className="px-5 text-xl">
+        <div className="2xl:max-w-[1250px] max-w-[988px] flex flex-col gap-12 bg-white mx-auto border-b border-b-blue">
+          <div className="grid grid-cols-2 items-center pt-24">
+            <div className="">
+              <h1 className="text-blue text-5xl">Calendar</h1>
             </div>
-            <div className="flex gap-6">
-              <div className="p-4 shadow-3xl w-72 flex  justify-between">
-                All categories <BiChevronDown />
+            <div className="flex gap-6 font-semibold text-lg">
+              <div className="px-3 shadow-cust w-72 flex  justify-between items-center">
+                All categories <BsChevronDown className="text-2xl" />
               </div>
-              <div className="p-4 shadow-3xl w-72 flex justify-between">
-                Date <BiChevronDown />
+              <div className="px-3 py-2 shadow-3xl w-72 flex justify-between">
+                Date <BsChevronDown className="text-2xl" />
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-4 items-center gap-6 py-16">
+          <div className="grid grid-cols-4 items-center gap-6 pb-20">
             {["PHD Defences", "Social events", "Other events", "Lectures"].map(
               (item, index) => {
                 return (
@@ -59,7 +64,7 @@ const Calendar = () => {
           News Overview
           <BsArrowRight />
         </p>
-        <div className="flex text-2xl self-end bg-blue p-5 bg-opacity-30 gap-10">
+        <div className="flex text-2xl self-end bg-blue p-5 bg-opacity-[0.15] gap-10">
           <BsChevronLeft /> <BsChevronRight />
         </div>
       </div>
