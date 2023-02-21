@@ -3,9 +3,9 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="py-6 bg-blue">
-      <div className=" text-white flex justify-between text-lg 2xl:max-w-[1250px] max-w-[988px]  mx-auto">
-        <div className="flex text-white gap-3">
+    <div className="lg:py-6 bg-blue px-5 lg:px-0  py-8">
+      <div className=" text-white flex flex-wrap gap-5 2xl:gap-0 justify-between text-lg 2xl:max-w-[1250px] max-w-[988px]  mx-auto">
+        <div className="flex  flex-wrap leading-4 text-white gap-3">
           {[
             "Privacy Statement",
             "Disclaimer",

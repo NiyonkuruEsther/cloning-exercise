@@ -18,14 +18,14 @@ const Navbar = () => {
           tabValue === 1 ? " invisible" : ""
         }`}
       >
-        <div className="px-30 py-4 bg-white max-w-full w-full">
+        <div className="px-4 lg:px-30 lg:py-4 py-3 bg-white max-w-full w-full">
           <img
             src="https://vu.nl/assets/images/VU-logo-nobg.svg"
             alt=""
-            className="max-w-[185px] w-[185px]"
+            className="max-w-[185px] w-[180px] lg:w-[185px] "
           />
         </div>
-        <div className="flex items-center gap-6 max-w-[234px] bg-gray px-30 text-2xl font-thin">
+        <div className="flex items-center gap-2 lg:gap-6 max-w-[234px] bg-gray px-5 lg:px-30 text-xl lg:text-2xl font-thin">
           <p>NL</p>
           <svg
             stroke="currentColor"
@@ -83,8 +83,7 @@ const Navbar = () => {
             ].map((e, i) => {
               return (
                 <Link
-                  href={""}
-                  // href={`/rout/${i}`}
+                  href={`${i}`}
                   key={i}
                   onClick={() => setSlide(0)}
                   className=""

@@ -5,3 +5,12 @@
 .curve {
     clip-path: polygon(13% 10%, 15% 16%, 17% 10%, 100% 10%, 100% 100%, 0 99%, 0% 70%, 0 10%)
 }
+
+
+.back {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(242, 239, 237, 1) 50%);
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(242, 239, 237, 1) 50%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(242, 239, 237, 1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#f2efed", GradientType=1);
+}

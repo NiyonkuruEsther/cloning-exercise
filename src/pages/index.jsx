@@ -38,39 +38,45 @@ export default function Home() {
         <Image />
         <div className="bg-white max-w-[1600px] mx-auto shadow-3xl ">
           <Info />
-          <Visit />
+          <div className="px-5">
+            <Visit />
+          </div>
           <Impact />
           {/* <UkraineCorona /> */}
-          <div className="grid grid-cols-2 gap-8 py-24 max-w-[1250px] mx-auto">
+          <div className="grid grid-cols-1 px-5 py-7 lg:grid-cols-2 lg:px-0 gap-8 lg:py-24 max-w-[1250px] mx-auto">
             <UkraineCard text={"Ukraine"} styles={"text-green"} />
             <UkraineCard text={"VU & Corona"} styles={"text-darkBlue"} />
           </div>
           {/* ImageCards component */}
-          <div className="bg-gray py-24">
-            <p className="text-darkBlue text-3xl font-semibold max-w-[1250px] mx-auto mb-12">
+          <div className="bg-gray py-12 px-5 lg:px-0 lg:py-24">
+            <p className="text-darkBlue text-2xl lg:text-3xl font-semibold max-w-[1250px] mx-auto mb-5 lg:mb-12">
               NEWS
             </p>
             <div
-              className="grid grid-cols-2 max-w-[1250px] mx-auto
+              className="grid grid-cols-1 gap-8 lg:gap-4 lg:grid-cols-2 max-w-[1250px] mx-auto
     "
             >
-              <div className="grid gap-6">
+              <div className="grid gap-8 lg:gap-6">
                 <ImgCard
                   num={5}
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/83279044-76f1-4736-8fe6-383f0530dae1/2N3337X.jpg?w=1250&h=600&fit=clip&rect=0,1254,6720,3226"
                   }
-                  styles={"max-w-[360px] max-h-[274px] h-[274px] object-cover"}
+                  styles={
+                    "lg:max-w-[360px] lg:w-max  lg:min-w-[360px] lg:min-h-[274px] lg:max-h-[274px] min-w-[150px] lg:w-[150px] min-h-[114px] lg:h-[114px] lg:h-[274px] object-cover"
+                  }
                 />
                 <ImgCard
                   num={11}
                   src={
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/d8e771d2-c135-499c-a67c-d1da825f453b/robofinch%20def.png"
                   }
-                  styles={"max-w-[360px] max-h-[274px] h-[274px] object-cover"}
+                  styles={
+                    "min-w-[150px] lg:min-w-[360px] lg:min-h-[274px] lg:w-[150px] min-h-[114px] lg:h-[114px]   object-cover"
+                  }
                 />
               </div>
-              <div className="gap-24 grid justify-self-end">
+              <div className="gap-8 lg:gap-24 grid justify-self-end">
                 {" "}
                 <ImgCard
                   num={13}
@@ -78,7 +84,7 @@ export default function Home() {
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/45e509b2-1cf3-49a7-b40d-53310c2e2219/7%20ton%20voor%20welzijn%20Oekrai%CC%88ne%20vluchtelingen_afb_1250x600.jpg"
                   }
                   styles={
-                    "max-w-[150px] w-[150px] max-h-[114px] h-[114px] object-cover"
+                    "min-w-[150px] lg:w-[150px] min-h-[114px] lg:h-[114px]  object-cover"
                   }
                 />
                 <ImgCard
@@ -87,7 +93,7 @@ export default function Home() {
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/c49919f7-968b-41d7-8776-e9e555f737c5/Sapiens_VUweb_2200x720.jpg?w=1250&h=600&fit=clip&rect=350,0,1500,720"
                   }
                   styles={
-                    "max-w-[150px] w-[150px] max-h-[114px] h-[114px] object-cover"
+                    "min-w-[150px] lg:w-[150px] min-h-[114px] lg:h-[114px]  object-cover"
                   }
                 />
                 <ImgCard
@@ -96,13 +102,13 @@ export default function Home() {
                     "https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/f9f7b751-4e22-4175-add9-3aec344e16ed/Wouter-Botzen.png"
                   }
                   styles={
-                    "max-w-[150px] w-[150px] max-h-[114px] h-[114px] object-cover"
+                    "min-w-[150px] lg:w-[150px] min-h-[114px] lg:h-[114px]   object-cover"
                   }
                 />
               </div>
             </div>{" "}
             <div
-              className="font-semibold max-w-[1250px] mx-auto text-lg flex w-full justify-center mt-28
+              className="font-semibold max-w-[1250px] mx-auto text-lg flex w-full justify-center mt-12 lg:mt-28
             "
             >
               <p className="flex gap-6 items-center">
@@ -113,7 +119,7 @@ export default function Home() {
             </div>
           </div>
           <Calendar />
-          <div className="bg-gray">
+          <div className="bg-gray px-5">
             <Visit />
           </div>
           <InfiniteScroll />

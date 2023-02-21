@@ -3,9 +3,9 @@ import { BsArrowRight, BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const InfiniteScroll = () => {
   return (
-    <div className="flex flex-col gap-8 py-16 overflow-hidden">
+    <div className="flex flex-col gap-8 py-6 lg:py-16 overflow-hidden">
       <div>
-        <p className="text-4xl text-red 2xl:max-w-[1250px] max-w-[988px]  mx-auto py-12">
+        <p className="text-3xl px-5  lg:text-4xl text-red lg:max-w-[1250px] max-w-[988px] mx-auto lg:py-12">
           We are VU Amsterdam
         </p>
       </div>
@@ -40,7 +40,7 @@ const InfiniteScroll = () => {
           );
         })}
       </div>
-      <div className="flex text-2xl self-end bg-red p-5 bg-opacity-30 gap-10 mt-4">
+      <div className="hidden lg:flex text-2xl self-end bg-red p-5 bg-opacity-30 gap-10 mt-4">
         <BsChevronLeft /> <BsChevronRight />
       </div>
     </div>
