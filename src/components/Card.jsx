@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -23,10 +24,14 @@ const Card = ({ styles, title }) => {
           "Study guide",
         ].map((item, i) => {
           return (
-            <div key={i} className="text-lg flex  justify-between">
-              <p className="self-start"> {item}</p>
+            <Link
+              key={i}
+              href="https://vu.nl/en/education/bachelor"
+              className="text-lg flex  justify-between"
+            >
+              <div className="self-start"> {item}</div>
               <AiOutlineArrowRight className="text-xl" />
-            </div>
+            </Link>
           );
         })}
       </div>

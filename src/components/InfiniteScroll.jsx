@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BsArrowRight, BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
@@ -21,7 +22,11 @@ const InfiniteScroll = () => {
           ,
         ].map((item, i) => {
           return (
-            <div key={i} className="max-w-[377px] flex flex-col gap-6">
+            <Link
+              href="https://vu.nl/en/events/2023/abri-writing-boost"
+              key={i}
+              className="max-w-[377px] flex flex-col gap-6"
+            >
               <img
                 className={`max-w-[377px] max-h-[476px] object-cover object-center h-[476px] `}
                 src={item}
@@ -36,7 +41,7 @@ const InfiniteScroll = () => {
                   <BsArrowRight />
                 </p>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

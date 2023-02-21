@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
 import {
@@ -12,7 +13,7 @@ const Calendar = () => {
     <div>
       {" "}
       <div className="px-5 text-xl">
-        <div className="2xl:max-w-[1250px] max-w-[988px] flex flex-col gap-12 bg-white mx-auto lg:border-b border-b-blue">
+        <div className="2xl:max-w-[1250px] max-w-[988px] flex flex-col gap-12 bg-white mx-auto lg:border-b lg:pb-12 border-b-blue">
           <div className="grid lg:grid-cols-2 gap-4 lg:gap-0 items-center pt-8 lg:pt-24">
             <div className="">
               <h1 className="text-blue text-3xl lg:text-5xl">Calendar</h1>
@@ -27,12 +28,17 @@ const Calendar = () => {
             </div>
           </div>
 
-          <div className="flex max-w-4xl  lg:grid lg:grid-cols-4 w-max items-center gap-6 pb-20 overflow-x-auto scrollbar-hide smooth-scroll ease-in-out duration-300">
+          <div className="flex max-w-4xl lg:grid lg:grid-cols-4 lg:w-full lg:max-w-7xl w-max items-center gap-6 pb-20 overflow-x-auto scrollbar-hide smooth-scroll ease-in-out duration-300">
             {["PHD Defences", "Social events", "Other events", "Lectures"].map(
               (item, index) => {
                 return (
                   <div key={index} className="">
-                    <h1 className="text-thin underline">{item}</h1>
+                    <Link
+                      href="https://vu.nl/en/events/2023/abri-writing-boost"
+                      className="text-thin underline"
+                    >
+                      {item}
+                    </Link>
                     <div className="mt-4">
                       {[1].map((item, i) => {
                         return (
@@ -58,7 +64,7 @@ const Calendar = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between 2xl:max-w-[1250px] max-w-[988px] w-max mx-auto lg:w-auto pb-12 px-5 lg:px-0 lg:pb-32">
+      <div className="flex justify-between 2xl:max-w-[1250px] max-w-[988px] w-max mx-auto lg:w-auto pb-12 px-5 lg:px-0 lg:pb-24">
         <div className="flex gap-6 items-center text-center justify-center lg:text-start  text-base font-semibold lg:font-normal lg:text-xl py-4">
           {" "}
           <p> View Calendar</p>

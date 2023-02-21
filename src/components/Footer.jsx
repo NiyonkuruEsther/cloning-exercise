@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -16,7 +17,12 @@ const Footer = () => {
           ].map((item, i) => {
             return (
               <div key={i} className="flex gap-1 justify-center items-center">
-                <p className="whitespace-nowrap tracking-tight">{item} </p>{" "}
+                <Link
+                  href="https://vu.nl/en/events/2023/abri-writing-boost"
+                  className="whitespace-nowrap tracking-tight"
+                >
+                  {item}{" "}
+                </Link>{" "}
                 <BsArrowRight className="text-sm" />
               </div>
             );

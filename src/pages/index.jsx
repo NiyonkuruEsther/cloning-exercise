@@ -13,6 +13,7 @@ import Features from "@/components/Features";
 import InfiniteScroll from "@/components/InfiniteScroll";
 import Tour from "@/components/Tour";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -111,11 +112,14 @@ export default function Home() {
               className="font-semibold max-w-[1250px] mx-auto text-lg flex w-full justify-center mt-12 lg:mt-28
             "
             >
-              <p className="flex gap-6 items-center">
+              <Link
+                href="https://vu.nl/en/news/2023/erc-consolidator-grant-for-wouter-botzen"
+                className="flex gap-6 items-center"
+              >
                 {" "}
                 News Overview
                 <BsArrowRight />
-              </p>
+              </Link>
             </div>
           </div>
           <Calendar />

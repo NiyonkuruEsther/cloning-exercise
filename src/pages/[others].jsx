@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
-import Home from "..";
+import Home from ".";
 
 const Details = () => {
   const {
@@ -8,7 +8,10 @@ const Details = () => {
   } = useRouter();
   return (
     <>
-      <p className="bg-purple-600">This is a new page on index:{id}</p>
+      <p className="bg-purple-600 sticky text-white inset-x-0 z-50">
+        This is a new page
+      </p>
+
       <Home />
     </>
   );

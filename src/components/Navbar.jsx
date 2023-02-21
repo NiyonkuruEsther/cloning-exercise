@@ -18,15 +18,19 @@ const Navbar = () => {
           tabValue === 1 ? " invisible" : ""
         }`}
       >
-        <div className="px-4 lg:px-30 lg:py-4 py-3 bg-white max-w-full w-full">
+        <Link
+          href="https://vu.nl/en"
+          className="px-4 lg:px-30 lg:py-4 py-3 bg-white max-w-full w-full"
+        >
           <img
             src="https://vu.nl/assets/images/VU-logo-nobg.svg"
             alt=""
             className="max-w-[185px] w-[180px] lg:w-[185px] "
           />
-        </div>
+        </Link>
         <div className="flex items-center gap-2 lg:gap-6 max-w-[234px] bg-gray px-5 lg:px-30 text-xl lg:text-2xl font-thin">
-          <p>NL</p>
+          <Link href={"https://vu.nl/nl"}>NL</Link>
+
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -43,9 +47,12 @@ const Navbar = () => {
               </g>
             </g>
           </svg>
-          <CiSearch />
+          <Link href={"https://vu.nl/en/search"}>
+            <CiSearch />
+          </Link>
+
           <AiOutlineMenu
-            className="font-extrathin"
+            className="font-extrathin cursor-pointer"
             onClick={() => setTabValue(1)}
           />
         </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Visit = () => {
@@ -8,9 +9,12 @@ const Visit = () => {
         <p className="text-white text-center leading-tight lg:leading-none  font-semibold lg:font-normal">
           Do you also want to change your world?
         </p>
-        <button className="bg-white px-12 lg:px-30 py-3 w-full lg:w-fit leading-tight lg:leading-none text-center font-semibold lg:font-normal">
+        <Link
+          href="https://vu.nl/en/education/more-about/vu-master-s-event"
+          className="bg-white px-12 lg:px-30 py-3 w-full lg:w-fit leading-tight lg:leading-none text-center font-semibold lg:font-normal"
+        >
           Visit The VU Master&apos;s Event
-        </button>
+        </Link>
       </div>
     </div>
   );
