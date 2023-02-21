@@ -46,7 +46,7 @@ const Info = () => {
           <p>Lorem Ipsum</p>
         </div>
       </div>
-      <div className=" flex justify-between max-w-fit gap-5 lg:gap-12 mx-auto px-8 flex-col lg:flex-row">
+      <div className=" flex justify-between max-w-[1250px] gap-5 px-1 lg:gap-16 mx-auto flex-col lg:flex-row">
         <Card styles={"w-[615px] "} title="Education" />
         <Card styles={"w-[615px] "} title="Research" />
       </div>
