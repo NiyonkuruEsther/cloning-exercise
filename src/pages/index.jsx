@@ -30,7 +30,7 @@ export default function Home() {
 
         <link rel="icon" href="/Capture.PNG" />
       </Head>
-      <div className="bg-gray text-[#333333]">
+      <div className="bg-gray text-[#333333] overflow-hidden">
         <div className="bg-white max-w-[1600px] mx-auto shadow-3xl overflow-hidden">
           <Navbar />
           <Hero />

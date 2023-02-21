@@ -4,7 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Card = ({ styles, title }) => {
   return (
     <div
-      className={` max-w-[615px]  px-8 ${styles} shadow-3xl py-8 flex flex-col gap-8`}
+      className={`max-w-[588px] lg:max-w-[615px] px-8 ${styles} shadow-3xl py-8 flex flex-col gap-8`}
     >
       <div
         className={`flex text-5xl text-blue justify-between  ${

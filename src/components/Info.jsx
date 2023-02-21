@@ -6,7 +6,7 @@ import Card from "./Card";
 
 const Info = () => {
   return (
-    <div className="max-w-full -mt-16 bg-white">
+    <div className="max-w-full lg:-mt-16 bg-white">
       {" "}
       <div className="lg:hidden max-w-5xl mx-auto w-full flex text-base lg:text-lg font-semibold gap-14 lg:gap-28 px-5 py-6 lg:pt-14 lg:pb-24 ">
         <div className="flex flex-col lg:flex-row gap-2 items-center ">
@@ -46,7 +46,7 @@ const Info = () => {
           <p>Lorem Ipsum</p>
         </div>
       </div>
-      <div className=" flex justify-between max-w-fit gap-5 lg:gap-12 mx-auto px-5 flex-col lg:flex-row">
+      <div className=" flex justify-between max-w-fit gap-5 lg:gap-12 mx-auto px-8 flex-col lg:flex-row">
         <Card styles={"w-[615px] "} title="Education" />
         <Card styles={"w-[615px] "} title="Research" />
       </div>

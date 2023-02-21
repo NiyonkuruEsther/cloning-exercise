@@ -15,7 +15,7 @@ const Image = () => {
                 name=""
                 id=""
                 placeholder="Search..."
-                className="bg-blue"
+                className="bg-blue placeholder:text-white outline-none"
               />
               <CiSearch />
             </div>
