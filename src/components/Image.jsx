@@ -22,9 +22,9 @@ const Image = () => {
         </div>
         <Link
           href="https://vu.nl/en/about-vu"
-          className=" py-6 lg:py-30 px-5 lg:px-[40px] bg-white h-fit text-blue flex justify-between max-w-full lg:max-w-[512px] text-xl lg:text-3xl lg:w-[512px] w-full lg:-mt-12 shadow-3xl"
+          className=" py-6 lg:py-30 px-5 lg:px-[40px] bg-white h-fit text-blue flex justify-between max-w-full items-center lg:max-w-[512px] text-xl lg:text-3xl lg:w-[512px] w-full lg:-mt-12 shadow-3xl"
         >
-          <p>About VU Amsterdam </p>
+          <p className="">About VU Amsterdam </p>
           <AiOutlineArrowRight />
         </Link>
         <img
@@ -49,7 +49,7 @@ const Image = () => {
           </div>
           <Link
             href="https://vu.nl/en/about-vu"
-            className="py-30 px-[20px] bg-white h-fit text-blue flex justify-between max-w-[512px] text-3xl w-[512px] -mt-12 shadow-3xl"
+            className="py-30 px-[20px] bg-white h-fit text-blue flex justify-between items-center max-w-[512px] text-3xl w-[512px] -mt-12 shadow-3xl"
           >
             <p>About VU Amsterdam </p>
             <AiOutlineArrowRight className="" />
