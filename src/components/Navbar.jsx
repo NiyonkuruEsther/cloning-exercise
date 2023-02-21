@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
@@ -7,6 +7,10 @@ import Link from "next/link";
 const Navbar = () => {
   const [tabValue, setTabValue] = useState(0);
   const [slide, setSlide] = useState(1);
+  useEffect(() => {
+    document.body.style.overflow = tabValue ? "hidden" : "auto";
+    return () => (document.body.style.overflow = "scroll");
+  }, [tabValue]);
   return (
     <>
       <div
@@ -49,8 +53,8 @@ const Navbar = () => {
       <div
         className={
           tabValue
-            ? "w-[1600px] max-w-[1600px] absolute mx-auto h-screen  transition-all ease-in-out duration-300 opacity-100 z-[100000000] overflow-hidden bg-white"
-            : "transition-all duration-0 absolute w-full h-0 top-0 overflow-hidden mx-auto"
+            ? " max-w-[1600px] w-[1600px] absolute mx-auto h-screen transition-all ease-in-out duration-300 opacity-100 z-[100000000] overflow-hidden bg-white"
+            : "transition-all duration-0 absolute opacity-0 w-[1600px] h-0 top-0 overflow-hidden mx-auto"
         }
       >
         <div className="max-w-[1600px] mx-auto flex w-full justify-end">
